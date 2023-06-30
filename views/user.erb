@@ -1,0 +1,17 @@
+<p><a href='/'>Take me back to the user list</a></p>
+
+<h1><%= @name %></h2>
+
+<p>Email: <%= @info[:email] %></p>
+<p>Interests: <ul><% @info[:interests].each do |interest| %>
+                <li><%= interest %></li>
+                <% end %>
+</ul>
+</p>
+
+<p>Other users: <ul>
+<% @users.reject { |user| user == @name.to_sym }.keys.sort.map do |name| %>
+<li><a href="/users/<%= name.to_s %>"><%= name.to_s %></a></li>
+<% end %>
+</ul>
+</p>
