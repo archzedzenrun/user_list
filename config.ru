@@ -1,2 +1,2 @@
-require "./user_list"
+require "./name_list"
 run Sinatra::Application
