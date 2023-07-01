@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     erubis (2.7.0)
-    multi_json (1.12.1)
+    multi_json (1.15.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.5.9)
@@ -23,10 +23,9 @@ GEM
       rack-protection (= 3.0.6)
       sinatra (= 3.0.6)
       tilt (~> 2.0)
-    tilt (2.0.5)
+    tilt (2.2.0)
 
 PLATFORMS
-  ruby
   x86_64-linux
 
 DEPENDENCIES
